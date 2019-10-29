@@ -3,7 +3,7 @@ import pymysql
 
 # 连接数据库
 def conn_mysql():
-    conn = pymysql.connect(host='10.141.221.89', port=3306, user='seuser', password='seuser', database='se_database',
+    conn = pymysql.connect(host='10.141.221.89', port=3306, user='seuser', password='*****', database='se_database',
                            charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor)
     cur = conn.cursor()
     return conn, cur
